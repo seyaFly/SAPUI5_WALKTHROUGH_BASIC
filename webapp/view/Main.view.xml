@@ -1,0 +1,46 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+>
+	<Shell id="shell">
+		<App id="App">
+			<pages>
+				<Page>
+					<content>
+						<Table items="{steps>/walkthroughStepCollections}">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="{i18n>stepTableTitle}"/>
+									<ToolbarSpacer/>
+									<ToolbarSpacer/>
+								</Toolbar>
+							</headerToolbar>
+							<infoToolbar>
+								<OverflowToolbar>
+									<Label text="WalkThrough steps list"/>
+								</OverflowToolbar>
+							</infoToolbar>
+							<columns>
+								<Column>
+									<Label text="{i18n>stepslabel}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem
+									type="Navigation"
+									press="navToSteps(${steps>setpId})"
+								>
+									<cells>
+										<Text text="{steps>setpDescriptions}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

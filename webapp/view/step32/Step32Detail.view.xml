@@ -1,0 +1,16 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.step32.Step32Detail"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+	<Page title="{i18n>detailPageTitle}">
+		<ObjectHeader
+			intro="{invoice>ShipperName}"
+			title="{invoice>ProductName}"
+		/>
+	</Page>
+</mvc:View>

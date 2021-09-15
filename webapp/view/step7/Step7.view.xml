@@ -1,0 +1,27 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.step7.Step7"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+	<Page
+		showNavButton="true"
+		navButtonPress="navBackHandler"
+	>
+		<content>
+			<Button
+				text="Say Hello"
+				press="onShowHello"
+			/>
+			<Input
+				value="{/recipient/name}"
+				description="Hello {/recipient/name}"
+				valueLiveUpdate="true"
+				width="60%"
+			/>
+		</content>
+	</Page>
+</mvc:View>

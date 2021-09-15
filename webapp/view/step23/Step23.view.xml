@@ -1,0 +1,24 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.step23.Step23"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+>
+	<Page
+		showNavButton="true"
+		navButtonPress="navBackHandler"
+		class="myAppDemoWT"
+	>
+		<headerContent>
+			<Button
+				icon="sap-icon://hello-world"
+				press="onOpenDialog"
+			/>
+		</headerContent>
+		<content>
+			<mvc:XMLView viewName="onem.seya.walkthrough.view.step23.nest.HelloPanel"/>
+			<mvc:XMLView viewName="onem.seya.walkthrough.view.step23.nest.InvoiceList"/>
+		</content>
+	</Page>
+</mvc:View>

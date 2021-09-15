@@ -1,0 +1,485 @@
+{
+    "_version": "1.21.0",
+    "sap.app": {
+        "id": "onem.seya.walkthrough",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "dataSources": {
+            "invoiceRemote": {
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": false,
+        "rootView": {
+            "viewName": "onem.seya.walkthrough.view.Main",
+            "type": "XML",
+            "async": true,
+            "id": "App"
+        },
+        "dependencies": {
+            "minUI5Version": "1.66.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "onem.seya.walkthrough.i18n.i18n",
+                    "supportedLocales": ["en", ""],
+                    "fallbackLocale": "en"
+                }
+            },
+            "steps": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/main/walkthroughSteps.json",
+                "preload": true
+            },
+            "invoice": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/step20/data/Invoices.json",
+                "preload": true
+            },
+            "invoice2": {
+                "dataSource": "invoiceRemote"
+            }
+        },
+        "resources": {
+            "css": [{
+                "uri": "css/style.css"
+            }]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "onem.seya.walkthrough.view",
+                "controlId": "App",
+                "controlAggregation": "pages",
+                "async": true
+            },
+            "routes": [{
+                    "name": "main",
+                    "pattern": "",
+                    "target": ["MainTarget"]
+                },
+                {
+                    "name": "step5",
+                    "pattern": "step5",
+                    "target": ["step5Target"]
+                },
+                {
+                    "name": "step6",
+                    "pattern": "step6",
+                    "target": ["step6Target"]
+                },
+                {
+                    "name": "step7",
+                    "pattern": "step7",
+                    "target": ["step7Target"]
+                },
+                {
+                    "name": "step8",
+                    "pattern": "step8",
+                    "target": ["step8Target"]
+                },
+                {
+                    "name": "step13",
+                    "pattern": "step13",
+                    "target": ["step13Target"]
+                },
+                {
+                    "name": "step14",
+                    "pattern": "step14",
+                    "target": ["step14Target"]
+                },
+                {
+                    "name": "step15",
+                    "pattern": "step15",
+                    "target": ["step15Target"]
+                },
+                {
+                    "name": "step16",
+                    "pattern": "step16",
+                    "target": ["step16Target"]
+                },
+                {
+                    "name": "step17",
+                    "pattern": "step17",
+                    "target": ["step17Target"]
+                },
+                {
+                    "name": "step18",
+                    "pattern": "step18",
+                    "target": ["step18Target"]
+                },
+                {
+                    "name": "step19",
+                    "pattern": "step19",
+                    "target": ["step19Target"]
+                },
+                {
+                    "name": "step20",
+                    "pattern": "step20",
+                    "target": ["step20Target"]
+                },
+                {
+                    "name": "step21",
+                    "pattern": "step21",
+                    "target": ["step21Target"]
+                },
+                {
+                    "name": "step22",
+                    "pattern": "step22",
+                    "target": ["step22Target"]
+                },
+                {
+                    "name": "step23",
+                    "pattern": "step23",
+                    "target": ["step23Target"]
+                },
+                {
+                    "name": "step24",
+                    "pattern": "step24",
+                    "target": ["step24Target"]
+                },
+                {
+                    "name": "step25",
+                    "pattern": "step25",
+                    "target": ["step25Target"]
+                },
+                {
+                    "name": "step26",
+                    "pattern": "step26",
+                    "target": ["step26Target"]
+                },
+                {
+                    "name": "step31",
+                    "pattern": "step31",
+                    "target": ["step31Target"]
+                },
+                {
+                    "name": "step31Detail",
+                    "pattern": "step31Detail",
+                    "target": ["step31DetailTarget"]
+                },
+                {
+                    "name": "step32",
+                    "pattern": "step32",
+                    "target": ["step32Target"]
+                },
+                {
+                    "name": "step32Detail",
+                    "pattern": "step32Detail/{invoicePath}",
+                    "target": ["step32DetailTarget"]
+                },
+                {
+                    "name": "step33",
+                    "pattern": "step33",
+                    "target": ["step33Target"]
+                },
+                {
+                    "name": "step33Detail",
+                    "pattern": "step33Detail/{invoicePath}",
+                    "target": ["step33DetailTarget"]
+                },
+                {
+                    "name": "step34",
+                    "pattern": "step34",
+                    "target": ["step34Target"]
+                },
+                {
+                    "name": "step34Detail",
+                    "pattern": "step34Detail/{invoicePath}",
+                    "target": ["step34DetailTarget"]
+                },
+                {
+                    "name": "step35",
+                    "pattern": "step35",
+                    "target": ["step35Target"]
+                },
+                {
+                    "name": "step35Detail",
+                    "pattern": "step35Detail/{invoicePath}",
+                    "target": ["step35DetailTarget"]
+                },
+                {
+                    "name": "step36",
+                    "pattern": "step36",
+                    "target": ["step36Target"]
+                },
+                {
+                    "name": "step36Detail",
+                    "pattern": "step36Detail/{invoicePath}",
+                    "target": ["step36DetailTarget"]
+                },
+                {
+                    "name": "step37",
+                    "pattern": "step37",
+                    "target": ["step37Target"]
+                },
+                {
+                    "name": "step37Detail",
+                    "pattern": "step37Detail/{invoicePath}",
+                    "target": ["step37DetailTarget"]
+                },
+                {
+                    "name": "step38",
+                    "pattern": "step38",
+                    "target": ["step38Target"]
+                },
+                {
+                    "name": "step38Detail",
+                    "pattern": "step38Detail/{invoicePath}",
+                    "target": ["step38DetailTarget"]
+                }
+            ],
+            "targets": {
+                "MainTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 1,
+                    "viewName": "Main",
+                    "transition": "slide"
+                },
+                "step5Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step5/Step5"
+                },
+                "step6Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step6/Step6"
+                },
+                "step7Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step7/Step7"
+                },
+                "step8Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step8/Step8"
+                },
+                "step13Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step13/Step13"
+                },
+                "step14Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step14/Step14"
+                },
+                "step15Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step15/Step15"
+                },
+                "step16Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step16/Step16"
+                },
+                "step17Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step17/Step17"
+                },
+                "step18Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step18/Step18"
+                },
+                "step19Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step19/Step19"
+                },
+                "step20Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step20/Step20"
+                },
+                "step21Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step21/Step21"
+                },
+                "step22Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step22/Step22"
+                },
+                "step23Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step23/Step23"
+                },
+                "step24Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step24/Step24"
+                },
+                "step25Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step25/Step25"
+                },
+                "step26Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step26/Step26"
+                },
+                "step31Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step31/Step31"
+                },
+                "step31DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step31/Step31Detail"
+                },
+                "step32Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step32/Step32"
+                },
+                "step32DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step32/Step32Detail"
+                },
+                "step33Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step33/Step33"
+                },
+                "step33DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step33/Step33Detail"
+                },
+                "step34Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step34/Step34"
+                },
+                "step34DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step34/Step34Detail"
+                },
+                "step35Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step35/Step35"
+                },
+                "step35DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step35/Step35Detail"
+                },
+                "step36Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step36/Step36"
+                },
+                "step36DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step36/Step36Detail"
+                },
+                "step37Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step37/Step37"
+                },
+                "step37DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step37/Step37Detail"
+                },
+                "step38Target": {
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "transition": "slide",
+                    "viewName": "step38/Step38"
+                },
+                "step38DetailTarget": {
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "transition": "slide",
+                    "viewName": "step38/Step38Detail"
+                }
+            }
+        }
+    }
+}

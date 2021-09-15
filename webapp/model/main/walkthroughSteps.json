@@ -1,0 +1,123 @@
+{
+    "walkthroughStepCollections": [{
+            "setpId": 5,
+            "setpDescriptions": "Walkthrough - Step 5 - Controllers"
+        },
+        {
+            "setpId": 6,
+            "setpDescriptions": "Walkthrough - Step 6 - Modules"
+        },
+        {
+            "setpId": 7,
+            "setpDescriptions": " Walkthrough - Step 7 - JSON Model"
+        },
+        {
+            "setpId": 8,
+            "setpDescriptions": "Walkthrough - Step 8 - Translatable Texts"
+        },
+        {
+            "setpId": 13,
+            "setpDescriptions": "Walkthrough - Step 13 - Margins and Paddings"
+        },
+        {
+            "setpId": 14,
+            "setpDescriptions": "Walkthrough - Step 14 - Custom CSS and Theme Colors"
+        },
+        {
+            "setpId": 15,
+            "setpDescriptions": "Walkthrough - Step 15 - Nested Views"
+        },
+        {
+            "setpId": 16,
+            "setpDescriptions": "Walkthrough - Step 16 - Dialogs and Fragments"
+        },
+        {
+            "setpId": 17,
+            "setpDescriptions": "Walkthrough - Step 17 - Fragment Callbacks"
+        },
+        {
+            "setpId": 18,
+            "setpDescriptions": "Walkthrough - Step 18 - Icons"
+        },
+        {
+            "setpId": 19,
+            "setpDescriptions": "Walkthrough - Step 19 - Reuse Dialogs"
+        },
+        {
+            "setpId": 20,
+            "setpDescriptions": "Walkthrough - Step 20 - Aggregation Binding"
+        },
+        {
+            "setpId": 21,
+            "setpDescriptions": "Walkthrough - Step 21 - Data Types"
+        },
+        {
+            "setpId": 22,
+            "setpDescriptions": "Walkthrough - Step 22 - Expression Binding"
+        },
+        {
+            "setpId": 23,
+            "setpDescriptions": "Walkthrough - Step 23 - Custom Formatters"
+        },
+        {
+            "setpId": 24,
+            "setpDescriptions": "Walkthrough - Step 24 - Filtering"
+        },
+        {
+            "setpId": 25,
+            "setpDescriptions": "Walkthrough - Step 25 - Sorting and Grouping"
+        },
+        {
+            "setpId": 26,
+            "setpDescriptions": "Walkthrough - Step 26 - (Optional) Remote OData Service"
+        },
+        {
+            "setpId": 27,
+            "setpDescriptions": "Walkthrough - Step 27 - Mock Server Configuration"
+        },
+        {
+            "setpId": 28,
+            "setpDescriptions": "Walkthrough - Step 28 - Unit Test with QUnit"
+        },
+        {
+            "setpId": 29,
+            "setpDescriptions": "Walkthrough - Step 29 - Integration Test with OPA"
+        },
+        {
+            "setpId": 30,
+            "setpDescriptions": "Walkthrough - Step 30 - Debugging Tools"
+        },
+        {
+            "setpId": 31,
+            "setpDescriptions": "Walkthrough - Step 31 - Routing and Navigation"
+        },
+        {
+            "setpId": 32,
+            "setpDescriptions": "Walkthrough - Step 32 - Routing with Parameters"
+        },
+        {
+            "setpId": 33,
+            "setpDescriptions": "Walkthrough - Step 33 - Routing Back and History"
+        },
+        {
+            "setpId": 34,
+            "setpDescriptions": "Walkthrough - Step 34 - Custom Controls"
+        },
+        {
+            "setpId": 35,
+            "setpDescriptions": "Walkthrough - Step 35 - Responsiveness"
+        },
+        {
+            "setpId": 36,
+            "setpDescriptions": "Walkthrough - Step 36 - Device Adaptation"
+        },
+        {
+            "setpId": 37,
+            "setpDescriptions": "Walkthrough - Step 37 - Content Density"
+        },
+        {
+            "setpId": 38,
+            "setpDescriptions": "Walkthrough - Step 38 - Accessibility"
+        }
+    ]
+}

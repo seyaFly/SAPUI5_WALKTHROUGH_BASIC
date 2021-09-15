@@ -1,0 +1,21 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.step5.Step5"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+	<Page
+		showNavButton="true"
+		navButtonPress="navBackHandler"
+	>
+		<content>
+			<Button
+				text="Say Hello"
+				press="onShowHello"
+			/>
+		</content>
+	</Page>
+</mvc:View>

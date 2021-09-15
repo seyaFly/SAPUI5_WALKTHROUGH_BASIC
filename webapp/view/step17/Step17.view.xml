@@ -1,0 +1,22 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.step17.Step17"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+	<Page
+		showNavButton="true"
+		navButtonPress="navBackHandler"
+		class="myAppDemoWT"
+	>
+		<content>
+			<mvc:XMLView
+				viewName="onem.seya.walkthrough.view.step17.nest.HelloPanel"
+				async="true"
+			/>
+		</content>
+	</Page>
+</mvc:View>

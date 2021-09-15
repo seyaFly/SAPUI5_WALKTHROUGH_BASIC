@@ -1,0 +1,35 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.step33.nest.HelloPanel"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+>
+	<Panel
+		headerText="{i18n>helloPanelTitle}"
+		class="sapUiResponsiveMargin"
+		width="auto"
+	>
+		<Button
+			id="helloDialogButton"
+			icon="sap-icon://world"
+			text="{i18n>openDialogButtonText}"
+			press="onOpenDialog"
+			class="sapUiSmallMarginEnd"
+		/>
+		<Button
+			text="{i18n>showHelloButtonText}"
+			press="onShowHello"
+			class="myCustomButton"
+		/>
+		<Input
+			value="{/recipient/name}"
+			valueLiveUpdate="true"
+			width="60%"
+		/>
+		<FormattedText
+			htmlText="Hello {/recipient/name}"
+			class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+		/>
+	</Panel>
+</mvc:View>

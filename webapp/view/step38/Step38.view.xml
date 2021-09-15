@@ -1,0 +1,34 @@
+<mvc:View
+	controllerName="onem.seya.walkthrough.controller.step38.Step38"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+>
+	<Page
+		showNavButton="true"
+		navButtonPress="navBackHandler"
+		class="myAppDemoWT"
+	>
+		<landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="{i18n>Overview_rootLabel}"
+				contentRole="Main"
+				contentLabel="{i18n>Overview_contentLabel}"
+				headerRole="Banner"
+				headerLabel="{i18n>Overview_headerLabel}"
+			/>
+		</landmarkInfo>
+		<headerContent>
+			<Button
+				icon="sap-icon://hello-world"
+				press="onOpenDialog"
+			/>
+		</headerContent>
+		<content>
+			<mvc:XMLView viewName="onem.seya.walkthrough.view.step38.nest.HelloPanel"/>
+			<mvc:XMLView viewName="onem.seya.walkthrough.view.step38.nest.InvoiceList"/>
+		</content>
+	</Page>
+</mvc:View>
